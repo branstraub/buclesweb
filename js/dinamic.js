@@ -1,5 +1,6 @@
 var materias = ["Matematica", "Mnemotecnia", "Quimica", "Fisica", "Biologia", "Sistemas", "Filosofia", "Locucion", "Sismografia", "Laboratorio", "Programacion"];
-var fechas = ["Lunes 21/3", "Viernes 18/3", "Jueves 17/3"]
+var fechas = ["Lunes 21", "Viernes 18", "Jueves 17"]
+MostrarFecha();
 BuscarMaterias("");
 SepararFechas();
 
@@ -16,6 +17,13 @@ function MostrarMateria(materia){
 }
 
 function MostrarFecha(){
+	fechas.forEach(function(date){
+		$("#materias #timeline ul").append(
+		"<a href='dia.html'><li class='unidate'><p>"+ date +"<br /> de Marzo</p></li></a>"
+		);
+	});
+	
+
 }
 
 function BuscarMaterias(query){
