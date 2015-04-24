@@ -10,11 +10,11 @@
 </head>
 <body>
 	<section id="asistencia">
-		<h1><a href="index.html">bucles</a></h1>
+		<h1><a href="index.html"></a></h1>
 		<hr />
 		<div id="advise">
-			<i class="fa fa-calendar fa-5x"></i>
-			<h2>Buscá la fecha o el tema que te interese</h2>
+			<i class="fa fa-book fa-5x"></i>
+			<h2>¡Accedé a todo el material de la clase!</h2>
 		</div>
 		<footer>HEQSOA Todos los derechos reservados</footer>
 	</section>
@@ -23,15 +23,24 @@
 		<i class="fa fa-search"></i>
 	</div>
 	<section id="materias">
-		<h1 class='materiaTitle'><i class="fa fa-arrow-circle-left"></i>  Matematica I</h1>
+		<h1 class='materiaTitle'><a href="materia.html"><i class="fa fa-arrow-circle-left"></i></a>  Matematica I</h1>
 		<h2>Ultima Semana</h2>
-		<div id="timeline"></div>
-		<h3 class="materiaSub">Ultimos Temas</h3>
+		<div id="timeline" class="mini"></div>
+		<h3 class="materiaSub">Temas Vistos</h3>
 		<ul class='tema'>
-			<li class='tema'>Numeros Enteros</li>
-			<li class='tema'>Fracciones</li>
-			<li class='tema'>Tablas de Multiplicar</li>
+			<li class='tema clase'>Numeros Enteros</li>
+			<li class='tema clase'>Fracciones</li>
+			<li class='tema clase'>Tablas de Multiplicar</li>
 		</ul>
+		<button id="texto">Ver en texto</button>
+		<button id="download">Descargar</button>
+		
+		<video>
+			<source src="jellies.mp4" type="video/mp4" /><!-- WebKit -->
+			<source src="jellies.ogg" type="video/ogg" /><!-- Firefox / Opera -->
+			<track src="jellies.srt" kind="subtitle" srclang="en-US" label="English" />
+			Your browser does not support HTML5 video.
+		</video>
 	</section>
 </body>
 </html>

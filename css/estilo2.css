@@ -28,7 +28,13 @@ text-align:center;
 #asistencia h1{
 	font-family:'logo';
 	font-size:2.5em;
-	margin:15px;
+	margin:15px auto;
+	height:50px;
+	width:200px;
+	background-image:url('../imgs/logo.png');
+	background-size:cover;
+	background-position:top center;
+	background-repeat:no-repeat;
 	cursor:pointer;
 }
 
@@ -96,6 +102,10 @@ hr {
 
 #materias ul.tema{
 	margin-top:20px;
+}
+#materias li.tema.clase{
+	float:none;
+	width:160px;
 }
 
 #materias li.tema{
@@ -167,8 +177,17 @@ hr {
 	font-size:1.3em;
 }
 
+#timeline.mini{
+	/*height:10px;
+	width:320px;*/
+	transform-origin:0;
+	transform:scale(0.4);
+	margin:50px 0 50px -53px;
+}
+
 #timeline{
 	height:25px;
+	position:relative;
 	cursor: url(http://www.google.com/intl/en_ALL/mapfiles/openhand.cur), default !important;
 	width:800px;
 	background-color:rgba(0,0,0,0.7);
@@ -182,4 +201,81 @@ hr {
 
 #timeline:active{
 	cursor: url(http://www.google.com/intl/en_ALL/mapfiles/closedhand.cur), default !important;
+}
+
+#timeline .unidate{
+	height:40px;
+	width:40px;
+	top:-17px;
+	right:0;
+	position:absolute;
+	background-color:#FFF;
+	border-radius:500px;
+	border:12px solid rgba(0,0,0,.7);
+}
+
+#timeline .unidate p{
+	width:100px;
+	color:rgba(0,0,0,0.7);
+	margin-left:-30px;
+	margin-top:60px;
+	font-weight:100;
+	font-size:.8em;
+	text-align:center;
+}
+
+#timeline .unidate p:First-line{
+	font-size:1.3em;
+}
+
+
+#timeline .unidate:hover{
+	border-color:#ff4e0a;
+	cursor:pointer;
+	background-color:#FFF;
+}
+
+button{
+	cursor:pointer;
+	color:rgba(0,0,0,.7);
+	margin-right:15px;
+	margin-bottom:5px;
+	padding:10px;
+	font-family:Georgia;
+	border:none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	text-align:center;
+	outline:none;
+	width:225px;
+	color:#FFF;
+	font-size:1.2em;
+	display:block;
+}
+
+button#texto{
+	margin-top:50px;
+	background-color:#177FF8;
+	border-bottom:3px solid #1DB0F5;
+}
+
+button#download{
+	background-color:#F7941D;
+	border-bottom:3px solid #F5621F;
+}
+
+button:hover{
+	margin-bottom:8px;
+	transform:translateY(3px);
+	border-bottom:none !important;
+}
+
+video{
+	position:absolute;
+	right:50px;
+	top:240px;
+	width:700px;
+	height:300px;
 }
