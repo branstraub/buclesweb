@@ -215,9 +215,9 @@ hr {
 }
 
 #timeline .unidate p{
-	width:100px;
+	width:150px;
 	color:rgba(0,0,0,0.7);
-	margin-left:-30px;
+	margin-left:-55px;
 	margin-top:60px;
 	font-weight:100;
 	font-size:.8em;
@@ -261,12 +261,20 @@ button#texto{
 	border-bottom:3px solid #1DB0F5;
 }
 
+button#download:hover{
+	background-color:#FB9E31;
+}
+
 button#download{
 	background-color:#F7941D;
 	border-bottom:3px solid #F5621F;
 }
 
-button:hover{
+button#texto:hover{
+	background-color:#439AFB;
+}
+
+button:active{
 	margin-bottom:8px;
 	transform:translateY(3px);
 	border-bottom:none !important;
