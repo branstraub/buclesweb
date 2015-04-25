@@ -198,6 +198,7 @@ hr {
 	width:800px;
 	background-color:rgba(0,0,0,0.7);
 	transform:translate(-53px,0);
+	overflow:visible !important;
 	margin:150px 0 ;
 	-webkit-border-radius: 10px 10px 0 0;
 	-moz-border-radius: 10px;
@@ -220,6 +221,10 @@ hr {
 	border:12px solid rgba(0,0,0,.7);
 }
 
+#timeline .unidate.special{
+	border-color:#439AFB;
+}
+
 #timeline .unidate p{
 	width:150px;
 	color:rgba(0,0,0,0.7);
@@ -233,7 +238,6 @@ hr {
 #timeline .unidate p:First-line{
 	font-size:1.3em;
 }
-
 
 #timeline .unidate:hover{
 	border-color:#ff4e0a;
