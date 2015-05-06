@@ -28,7 +28,7 @@ $("#search.date").on('input', function(){
 	}else if(icono.hasClass('fa-search')){
 		icono.removeClass('fa-search').addClass('fa-spinner').addClass('fa-spin');
 		$("#timeline ul").append(
-		"<a href='dia.html'><li class='unidate special'><p> Martes 25 <br /> de Marzo</p></li></a>"
+		"<a href='dia.html'><li class='unidate special'><p>Lunes 12<br /> de Marzo</p></li></a>"
 		);
 		$("#timeline ul li:last").css('opacity','0');
 		SepararFechas();
@@ -57,8 +57,7 @@ function MostrarFecha(){
 }
 
 function BuscarMaterias(query){
-	$("#materias ul.materia").html("");
-	
+
 	//Recorrer el listado de materias
 	materias.forEach(function(i){
 		
@@ -67,6 +66,21 @@ function BuscarMaterias(query){
 			
 			//Si coincide, se muestra.
 			MostrarMateria(i);
+		}
+	});
+}
+
+function ExisteFecha(query){
+	$("#materias ul.materia").html("");
+	
+	//Recorrer el listado de materias
+	fechas.forEach(function(i){
+		
+		//Y fijarse si alguna coincide con lo que se busca
+		if (i.toLowerCase().match(new RegExp(query))){
+			console.log(i)
+			console.log(query)
+			return i;
 		}
 	});
 }
