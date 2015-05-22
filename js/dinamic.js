@@ -109,6 +109,7 @@ function getLink(){
 	})
 	  .done(function( msg ) {
 		console.log(msg);
+		loadNewDate('Miercoles 26')
 	  });
 }
 
