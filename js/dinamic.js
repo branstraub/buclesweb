@@ -102,6 +102,17 @@ function SepararFechas(){
 	})
 }
 
+function getLink(){
+	$.ajax({
+	  method: "POST",
+	  url: "test.php"
+	})
+	  .done(function( msg ) {
+		console.log(msg);
+	  });
+}
+
+
 function loadNewDate(ndate){
 	var timeline = $("#timeline");
 	var dates = $("#timeline ul a li");

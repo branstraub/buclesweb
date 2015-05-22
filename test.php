@@ -16,7 +16,10 @@ try {
 
     foreach($blobs as $blob)
     {
-        echo $blob->getName().": ".$blob->getUrl()."<br />";
+        //echo $blob->getName().": ".$blob->getUrl()."<br />";
+		if ($blob->getName() === "demo_22.mp3"){
+			return $blob->getUrl();
+		}
     }
 }
 catch(ServiceException $e){
@@ -25,6 +28,6 @@ catch(ServiceException $e){
     // http://msdn.microsoft.com/library/azure/dd179439.aspx
     $code = $e->getCode();
     $error_message = $e->getMessage();
-    echo $code.": ".$error_message."<br />";
+    //echo $code.": ".$error_message."<br />";
 }
 	?>
