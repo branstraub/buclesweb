@@ -18,7 +18,7 @@ try {
     {
         //echo $blob->getName().": ".$blob->getUrl()."<br />";
 		if ($blob->getName() === "demo_22.mp3"){
-			return $blob->getUrl();
+			echo $blob->getUrl();
 		}
     }
 }
