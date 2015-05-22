@@ -1,11 +1,10 @@
 //Arrays compartidos
 var materias = ["Matematica", "Mnemotecnia", "Quimica", "Fisica", "Biologia", "Sistemas", "Filosofia", "Locucion", "Sismografia", "Laboratorio", "Programacion"];
-var fechas = ["Lunes 21", "Viernes 18", "Jueves 17", "Miercoles 23"]
+var fechas = ["Lunes 21", "Viernes 18", "Jueves 17", "Miercoles 23", "Jueves 24", "Viernes 25"]
 
 //Funciones al iniciar página
-MostrarFecha();
 BuscarMaterias("");
-SepararFechas();
+
 
 //Buscador de materias
 $("#search").on('input', function() {
@@ -37,30 +36,42 @@ $("#search.date").on('input', function(){
 	}
 });
 
+
+
 function MostrarMateria(materia){
 	$("#materias ul.materia").append(
-	"<a href='materia.html'><li class='materia'><h3>" + materia + "</h3><h4>94.05</h4></li></a>"
+	"<a href='" + materia + ".html'><li class='materia'><h3>" + materia + "</h3><h4>94.05</h4></li></a>"
 	)
 }
 
-function MostrarFecha(){
+function MostrarFecha(materia){
+	var link = "";
+	
+	if(materia=="matematica"){
+		link="dia.html"
+	}else if(materia == "filosofia"){
+		link='filo23032015.html'
+	}
+	
 	fechas.every(function(date,index){
 		$("#materias #timeline ul").append(
-		"<a href='dia.html'><li class='unidate'><p>"+ date +"<br /> de Marzo</p></li></a>"
+		"<a href='" + link + "'><li class='unidate'><p>"+ date +"<br /> de Mayo</p></li></a>"
 		);
-		if(index == 2){
+		if(index == 4){
 			return false;
 		}else{
 		return true;
 		}
 	});
+	SepararFechas();
 }
 
 function BuscarMaterias(query){
-
+	//Limpio de materias
+	$("#materias ul.materia").html("");
+	
 	//Recorrer el listado de materias
 	materias.forEach(function(i){
-		
 		//Y fijarse si alguna coincide con lo que se busca
 		if (i.toLowerCase().match(new RegExp("^" + query))){
 			
@@ -89,4 +100,24 @@ function SepararFechas(){
 	$("#timeline ul li.unidate").each(function (i){
 		$(this).css('right',(i*150)+'px');
 	})
+}
+
+function loadNewDate(ndate){
+	var timeline = $("#timeline");
+	var dates = $("#timeline ul a li");
+	console.log(dates)
+	dates.each(function(i){
+		console.log($(this).css('right'))
+		$(this).animate({right: parseInt($(this).css('right'))+150 + 'px'},{duration:1000, queue:false});
+		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
+		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
+		$("#materias #timeline ul").append(
+		"<a href='dia.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Marzo</p></li></a>"
+		);
+		$("#timeline ul a li:last").css('display','block');
+		$("#timeline ul a li:last").animate({opacity:1},{duration:1000, queue:false});
+	});
+	
+	//dates.animate({opacity: '0'},"slow");
+	
 }

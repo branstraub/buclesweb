@@ -93,6 +93,7 @@ hr {
 #materias li.materia, #materias li.tema{
 	cursor:pointer;
 	color:rgba(0,0,0,.7);
+	line-height:1em;
 	margin-right:15px;
 	margin-bottom:15px;
 	padding:20px;
@@ -295,5 +296,6 @@ video{
 	right:50px;
 	top:240px;
 	width:700px;
+	-webkit-transform: translateZ(0);
 	height:300px;
 }
