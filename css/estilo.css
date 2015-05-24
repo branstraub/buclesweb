@@ -138,9 +138,14 @@ header h1{
 	left: 0;
 	right: 0;
 	text-align:center;
-	background-color:#10AF6D;
+	background-color:FFF;
 	padding-top:25px;
 	box-sizing:border-box;
+}
+
+#download img{
+	height:80px;
+	margin-top:-58px;
 }
 
 #download a{
