@@ -124,7 +124,7 @@ function loadNewDate(ndate){
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#materias #timeline ul").append(
-		"<a href='dia.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Marzo</p></li></a>"
+		"<a href='filo26052015.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Marzo</p></li></a>"
 		);
 		$("#timeline ul a li:last").css('display','block');
 		$("#timeline ul a li:last").animate({opacity:1},{duration:1000, queue:false});

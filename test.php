@@ -14,13 +14,15 @@ try {
     $blob_list = $blobRestProxy->listBlobs("clases");
     $blobs = $blob_list->getBlobs();
 
-    foreach($blobs as $blob)
-    {
-        //echo $blob->getName().": ".$blob->getUrl()."<br />";
-		if ($blob->getName() === "demo_22.mp3"){
-			echo $blob->getUrl();
+	while(true){
+		foreach($blobs as $blob)
+		{
+			//echo $blob->getName().": ".$blob->getUrl()."<br />";
+			if ($blob->getName() === "demo_22.mp3"){
+				echo $blob->getUrl();
+			}
 		}
-    }
+	}
 }
 catch(ServiceException $e){
     // Handle exception based on error codes and messages.

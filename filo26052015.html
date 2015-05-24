@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bucles - Trayendo a clase el Siglo XXI</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/estilo2.css" />
+	<link rel="stylesheet" href="css/fontawesome.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<section id="asistencia">
+		<h1><a href="index.html"></a></h1>
+		<hr />
+		<div id="advise">
+			<i class="fa fa-book fa-5x"></i>
+			<h2>¡Accedé a todo el material de la clase!</h2>
+		</div>
+		<footer>HEQSOA Todos los derechos reservados</footer>
+	</section>
+	<div id="searchcont">
+		<input type="text" id="search" placeholder='Fecha, Temas'/>
+		<i class="fa fa-search"></i>
+	</div>
+	<section id="materias">
+		<h1 class='materiaTitle'><a href="Filosofia.html"><i class="fa fa-arrow-circle-left"></i></a>  Filosofia I</h1>
+		<h2>Jueves 23 de Marzo</h2>
+		<div id="timeline" class="mini"><ul></ul></div>
+		<h3 class="materiaSub">Archivos de la clase</h3>
+		<ul class='tema'>
+			<li class='tema clase'>Manifesto Marxista</li>
+			<li class='tema clase'>La tecnologia como puente social</li>
+			<li class='tema clase'>Primeros pasos en la filosofia</li>
+		</ul>
+		<a href=""><button id="texto">Ver en texto</button></a>
+		<a href=""><button id="download">Descargar</button></a>
+		<video controls id='v'>
+			<source src="videos/test.mp4" type="video/mp4" /><!-- WebKit -->
+			<source src="jellies.ogg" type="video/ogg" /><!-- Firefox / Opera -->
+			<track src="videos/test.vtt" kind="subtitles" srclang="en-US" label="English" default/>
+			Your browser does not support HTML5 video.
+		</video>
+	</section>
+	<script type="text/javascript" src="js/dinamic.js"></script>
+</body>
+</html>
