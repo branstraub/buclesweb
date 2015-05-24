@@ -1,6 +1,6 @@
 //Arrays compartidos
 var materias = ["Matematica", "Mnemotecnia", "Quimica", "Fisica", "Biologia", "Sistemas", "Filosofia", "Locucion", "Sismografia", "Laboratorio", "Programacion"];
-var fechas = ["Lunes 21", "Viernes 18", "Jueves 17", "Miercoles 23", "Jueves 24", "Viernes 25"]
+var fechas = ["Miércoles 27", "Lunes 25", "Viernes 22", "Jueves 21", "Jueves 24", "Viernes 25"]
 
 //Funciones al iniciar página
 BuscarMaterias("");
@@ -109,7 +109,7 @@ function getLink(){
 	})
 	  .done(function( msg ) {
 		console.log(msg);
-		loadNewDate('Miercoles 26')
+		loadNewDate('Jueves 28')
 	  });
 }
 
@@ -124,7 +124,7 @@ function loadNewDate(ndate){
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#materias #timeline ul").append(
-		"<a href='filo26052015.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Marzo</p></li></a>"
+		"<a href='filo26052015.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Mayo</p></li></a>"
 		);
 		$("#timeline ul a li:last").css('display','block');
 		$("#timeline ul a li:last").animate({opacity:1},{duration:1000, queue:false});
