@@ -25,6 +25,7 @@ try {
 				$found = true;
 			}
 		}
+		sleep(1);
 	}
 }
 catch(ServiceException $e){
