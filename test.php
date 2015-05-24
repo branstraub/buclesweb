@@ -14,12 +14,15 @@ try {
     $blob_list = $blobRestProxy->listBlobs("clases");
     $blobs = $blob_list->getBlobs();
 
-	while(true){
+	$found = false;
+	while(!$found){
+		
 		foreach($blobs as $blob)
 		{
 			//echo $blob->getName().": ".$blob->getUrl()."<br />";
 			if ($blob->getName() === "demo_22.mp3"){
 				echo $blob->getUrl();
+				$found = true;
 			}
 		}
 	}
