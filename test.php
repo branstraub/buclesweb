@@ -22,6 +22,7 @@ try {
 				echo $blob->getUrl();
 			}
 		}
+		sleep(1);
 	}
 }
 catch(ServiceException $e){
