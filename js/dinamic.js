@@ -102,19 +102,19 @@ function SepararFechas(){
 	})
 }
 
-function getLink(){
+function getLink(file){
 	$.ajax({
 	  method: "POST",
 	  url: "test.php"
 	})
 	  .done(function( msg ) {
 		console.log(msg);
-		loadNewDate('Jueves 28')
+		loadNewDate('Jueves 28', file)
 	  });
 }
 
 
-function loadNewDate(ndate){
+function loadNewDate(ndate, file){
 	var timeline = $("#timeline");
 	var dates = $("#timeline ul a li");
 	console.log(dates)
@@ -124,7 +124,7 @@ function loadNewDate(ndate){
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#materias #timeline ul").append(
-		"<a href='filo26052015.html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Mayo</p></li></a>"
+		"<a href='" + file + ".html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Mayo</p></li></a>"
 		);
 		$("#timeline ul a li:last").css('display','block');
 		$("#timeline ul a li:last").animate({opacity:1},{duration:1000, queue:false});
