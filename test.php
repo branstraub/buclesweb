@@ -10,12 +10,13 @@ $blobRestProxy = ServicesBuilder::getInstance()->createBlobService('DefaultEndpo
 
 
 try {
-    // List blobs.
-    $blob_list = $blobRestProxy->listBlobs("clases");
-    $blobs = $blob_list->getBlobs();
-
+ 
 	$found = false;
 	while(!$found){
+		
+		// List blobs.
+		$blob_list = $blobRestProxy->listBlobs("clases");
+		$blobs = $blob_list->getBlobs();
 		
 		foreach($blobs as $blob)
 		{
