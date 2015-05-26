@@ -1,5 +1,5 @@
 //Arrays compartidos
-var materias = ["Matematica", "Mnemotecnia", "Quimica", "Fisica", "Biologia", "Sistemas", "Filosofia", "Locucion", "Sismografia", "Laboratorio", "Programacion", "Tecnotur"];
+var materias = ["Matematica", "Mnemotecnia", "Quimica", "Fisica", "Biologia", "Sistemas", "Filosofia", "Locucion", "Sismografia", "Laboratorio", "Programacion", "Tecnotur", "Historia"];
 var fechas = ["Miércoles 27", "Lunes 25", "Viernes 22", "Jueves 21", "Miércoles 20", "Martes 19"]
 
 //Funciones al iniciar página

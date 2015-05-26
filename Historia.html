@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Bucles - Trayendo a clase el Siglo XXI</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/estilo2.css" />
+	<link rel="stylesheet" href="css/fontawesome.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<section id="asistencia">
+		<h1><a href="index.html"></a></h1>
+		<hr />
+		<div id="advise">
+			<i class="fa fa-calendar fa-5x"></i>
+			<h2>Buscá la fecha o el archivo que te interese</h2>
+		</div>
+		<footer>Todos los derechos reservados</footer>
+	</section>
+	<div id="searchcont">
+		<input type="text" id="search" class='date' placeholder='Fecha, Temas'/>
+		<i class="fa fa-search"></i>
+	</div>
+	<section id="materias">
+		<h1 class='materiaTitle'><a href="materias.html"><i class="fa fa-arrow-circle-left"></i></a>  Historia</h1>
+		<h2>28.05</h2>
+		<div id="timeline">
+			<ul>
+
+			</ul>
+		</div>
+		<h3 class="materiaSub">Ultimos Archivos</h3>
+		<ul class='tema'>
+		</ul>
+	</section>
+	<script type="text/javascript" src="js/dinamic.js"></script>
+	<script type="text/javascript">
+		MostrarFecha("Historia");
+		setTimeout(function(){
+			getLink('hist28052015');
+		},500);
+		//test
+		//loadNewDate("Miercoles 26");
+	</script>
+</body>
+</html>
