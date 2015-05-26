@@ -21,7 +21,7 @@ try {
 		foreach($blobs as $blob)
 		{
 			//echo $blob->getName().": ".$blob->getUrl()."<br />";
-			if ($blob->getName() === "test.mp4"){
+			if ($blob->getName() === "tecdemo.mp3"){
 				echo $blob->getUrl();
 				$found = true;
 			}
