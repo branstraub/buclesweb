@@ -52,7 +52,7 @@ function MostrarFecha(materia){
 	}else if(materia == "filosofia"){
 		link='filo26052015.html';
 	}else if(materia="historia"){
-		link='hist28052015';
+		link='hist28052015.html';
 	}
 	
 	fechas.every(function(date,index){
