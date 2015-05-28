@@ -48,9 +48,11 @@ function MostrarFecha(materia){
 	var link = "";
 	
 	if(materia=="matematica"){
-		link="dia.html"
+		link="dia.html";
 	}else if(materia == "filosofia"){
-		link='filo23032015.html'
+		link='filo26052015.html';
+	}else if(materia="historia"){
+		link='hist28052015';
 	}
 	
 	fechas.every(function(date,index){
