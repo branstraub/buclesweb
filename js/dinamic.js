@@ -57,7 +57,7 @@ function MostrarFecha(materia){
 	
 	fechas.every(function(date,index){
 		$("#materias #timeline ul").append(
-		"<a href='" + link + "'><li class='unidate'><p>"+ date +"<br /> de Septiembre</p></li></a>"
+		"<a href='" + link + "'><li class='unidate'><p>"+ date +"<br /> de Agosto</p></li></a>"
 		);
 		if(index == 4){
 			return false;
@@ -126,7 +126,7 @@ function loadNewDate(ndate, file){
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#timeline ul a li:last").animate({opacity:0},{duration:1000, queue:false});
 		$("#materias #timeline ul").append(
-		"<a href='" + file + ".html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Mayo</p></li></a>"
+		"<a href='" + file + ".html'><li style='opacity:0;display:none;' class='unidate'><p>"+ ndate +"<br /> de Septiembre</p></li></a>"
 		);
 		$("#timeline ul a li:last").css('display','block');
 		$("#timeline ul a li:last").animate({opacity:1},{duration:1000, queue:false});
