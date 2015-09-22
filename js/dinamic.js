@@ -57,7 +57,7 @@ function MostrarFecha(materia){
 	
 	fechas.every(function(date,index){
 		$("#materias #timeline ul").append(
-		"<a href='" + link + "'><li class='unidate'><p>"+ date +"<br /> de Mayo</p></li></a>"
+		"<a href='" + link + "'><li class='unidate'><p>"+ date +"<br /> de Septiembre</p></li></a>"
 		);
 		if(index == 4){
 			return false;
@@ -111,7 +111,7 @@ function getLink(file){
 	})
 	  .done(function( msg ) {
 		console.log(msg);
-		loadNewDate('Jueves 28', file)
+		loadNewDate('Miercoles 23', file)
 	  });
 }
 
